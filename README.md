@@ -1,4 +1,4 @@
-# 📊 Sondage2Degrés - Application de Plans de Sondage
+# 📊 SampleGenius-ISE : Application de Plans de Sondage
 
 *Application Streamlit pour la simulation de plans de sondage suivant différents plans : stratifiés, par grappes, à 2 ou 3degrés multiples, à probabilités inégales*
 
@@ -15,6 +15,7 @@
   - Sélection-rejet / Reservoir sampling
 
 ## 🚀 Déploiement
+
 L'application est hébergée sur Streamlit Cloud :  
 👉 [https://sondage2degres.streamlit.app](https://samplegenius-ise.streamlit.app/)
 
@@ -24,9 +25,11 @@ git clone https://github.com/votrecompte/projet-sondage.git
 cd projet-sondage
 pip install -r requirements.txt
 streamlit run main.py
+```
 
 ## 📚 Structure du Projet
-.
+
+```bash
 ├── Base.csv/                # Exemples de bases de données
 ├── app_pages/
 │   ├── pages_deux_degres.py       # Sondage à 2 ou 3 degrés
@@ -43,6 +46,7 @@ streamlit run main.py
 └── sondage_par_grappes.py         # Codes pour sondage par grappes
 └── tirage_sas.py                  # Codes pour SAS
 └── unequal_prob_sampling.py       # Codes pour sondage à proba inégale
+```
 
 ## 🧑‍💻 Utilisation
 
