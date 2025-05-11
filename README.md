@@ -3,23 +3,42 @@
 *Application Streamlit pour la simulation de plans de sondage suivant différents plans : stratifiés, par grappes, à 2 ou 3degrés multiples, à probabilités inégales*
 
 ## 🌟 Fonctionnalités
+
 - **Méthodes implémentées** :
   - Sondages Aléatoires Simples (avec/sans remise)
   - Sondages stratifiés
   - Sondages par grappes
   - Sondages à 2/3 degrés
   - Sondages à probabilités inégales (PPS)
+    
 - **Algorithmes disponibles** :
-  - Tirage SAS (base/draw-by-draw)
-  - Bernoulli / Tri aléatoire
-  - Sélection-rejet / Reservoir sampling
-
+  - Tirage SAS avec/sans remises
+  - Draw by draw
+  - Bernoulli
+  - Tri aléatoire
+  - Sélection-rejet
+  - Reservoir sampling
+    
+- **Mode de répartition implémenté pour le sondage stratifié** :
+  - Taille fixe
+  - Allocation proportionnelle
+  - Allocation de Neyman
+    
+- **Méthodespour sondage à probabilité inégale** :
+  - PIAR - Méthode par défaut (cumuls)
+  - PIAR - Méthode de Lahiri
+  - PISR - Poisson
+  - PISR - Systématique
+  - PISR - Méthode de Sunter
+ 
+    
 ## 🚀 Déploiement
 
 L'application est hébergée sur Streamlit Cloud :  
 👉 [https://samplegenius-ise.streamlit.app/](https://samplegenius-ise.streamlit.app/)
 
 *Alternative locale :*
+
 ```bash
 git clone https://github.com/votrecompte/projet-sondage.git
 cd projet-sondage
