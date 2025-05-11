@@ -16,23 +16,37 @@
 
 ## 🚀 Déploiement
 L'application est hébergée sur Streamlit Cloud :  
-👉 [https://sondage2degres.streamlit.app](https://sondage2degres.streamlit.app)
+👉 [https://sondage2degres.streamlit.app](https://samplegenius-ise.streamlit.app/)
 
 *Alternative locale :*
 ```bash
 git clone https://github.com/votrecompte/projet-sondage.git
 cd projet-sondage
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run main.py
 
 ## 📚 Structure du Projet
 .
-├── data/                    # Exemples de bases de données
-│   ├── population.csv       # Fichier modèle fourni dans l'énoncé
-├── modules/
-│   ├── tirages_sas.py       # Algorithmes de tirage SAS (Q1)
-│   ├── stratification.py    # Sondages stratifiés (Q2)
-│   ├── grappes.py           # Sondages par grappes (Q3)
-│   └── deux_degres.py       # Sondages multi-étapes (Q4-Q6)
-├── app.py                   # Application Streamlit principale
-└── requirements.txt         # Dépendances Python
+├── Base.csv/                # Exemples de bases de données
+├── app_pages/
+│   ├── pages_deux_degres.py       # Sondage à 2 ou 3 degrés
+│   ├── page_grappes.py            # Sondage par grappes
+│   ├── pages_home.py              # Page d'acceuil
+│   └── page_pik.py                # Pour le sondage à proba inégale
+│   └── page_sas.py                # Pour faire du SAS ou de la stratification
+│   └── page_team.py               # Présentation de l'équipe de développement
+│   └── page_upload.py             # Pour charger la base
+├── app.py                         # Application Streamlit principale
+└── estimation.py                  # Codes pour le calcul des différents estimateurs : la moyenne et le total empirique, l'estimateur de Hajek et celui de Horvitz                                       Thompson ainsi que les intervalles de confiances 
+└── requirements.txt               # Dépendances Python
+└── sondage_deux_degres.py         # Codes pour 2 et/ou 3 degrés
+└── sondage_par_grappes.py         # Codes pour sondage par grappes
+└── tirage_sas.py                  # Codes pour SAS
+└── unequal_prob_sampling.py       # Codes pour sondage à proba inégale
+
+## 🧑‍💻 Utilisation
+
+- Charger vos données (CSV/Excel) via l'interface
+- Paramétrer les étapes (tailles, méthodes, etc.)
+- Exporter les résultats (CSV/Excel)
+
