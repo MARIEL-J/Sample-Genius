@@ -17,7 +17,7 @@
 ## 🚀 Déploiement
 
 L'application est hébergée sur Streamlit Cloud :  
-👉 [https://sondage2degres.streamlit.app](https://samplegenius-ise.streamlit.app/)
+👉 [https://samplegenius-ise.streamlit.app/](https://samplegenius-ise.streamlit.app/)
 
 *Alternative locale :*
 ```bash
@@ -30,7 +30,7 @@ streamlit run main.py
 ## 📚 Structure du Projet
 
 ```bash
-├── Base.csv/                # Exemples de bases de données
+├── Base.csv/                      # Exemples de bases de données
 ├── app_pages/
 │   ├── pages_deux_degres.py       # Sondage à 2 ou 3 degrés
 │   ├── page_grappes.py            # Sondage par grappes
@@ -40,7 +40,7 @@ streamlit run main.py
 │   └── page_team.py               # Présentation de l'équipe de développement
 │   └── page_upload.py             # Pour charger la base
 ├── app.py                         # Application Streamlit principale
-└── estimation.py                  # Codes pour le calcul des différents estimateurs : la moyenne et le total empirique, l'estimateur de Hajek et celui de Horvitz                                       Thompson ainsi que les intervalles de confiances 
+└── estimation.py                  # Codes pour le calcul des différents estimateurs : la moyenne et le total empirique, l'estimateur de Hajek et celui de Horvitz Thompson ainsi que les intervalles de confiances 
 └── requirements.txt               # Dépendances Python
 └── sondage_deux_degres.py         # Codes pour 2 et/ou 3 degrés
 └── sondage_par_grappes.py         # Codes pour sondage par grappes
